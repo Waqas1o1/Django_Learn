@@ -1,0 +1,23 @@
+ <script>
+        $('#registrationsubmit').click(function(e) {
+            e.preventDefault();
+            $.ajax({
+                    type: 'POST',
+                    url: 'registration/',
+                    data: {
+                        'firstname': $('input[name=firstname]').val(),
+                        'lastname': $('input[name=lastname]').val(),
+                        'email': $('input[name=email]').val(),
+
+                        'contact': $('input[name=contact]').val(),
+                        'city': $('#city').val(),
+                        'csrfmiddlewaretoken': '{{ csrf_token }}'
+                    },
+                    encode: true,
+                })
+                .done(function(data) {
+                    // d = JSON.parse(data);
+                    console.log(data)
+                })
+        })
+    </script>
