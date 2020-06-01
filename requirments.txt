@@ -1,0 +1,11 @@
+asgiref==3.2.7
+Django==3.0.6
+dnspython==1.16.0     
+email-validator==1.1.1
+filelock==3.0.12      
+idna==2.9
+Pillow==7.1.2
+py3-validate-email==0.2.8
+py3dns==3.2.1
+pytz==2020.1
+sqlparse==0.3.1
